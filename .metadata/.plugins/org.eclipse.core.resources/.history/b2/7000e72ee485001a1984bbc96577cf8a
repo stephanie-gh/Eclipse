@@ -1,0 +1,5 @@
+package java.xml.bind;
+
+public @interface DatatypeConverter {
+
+}

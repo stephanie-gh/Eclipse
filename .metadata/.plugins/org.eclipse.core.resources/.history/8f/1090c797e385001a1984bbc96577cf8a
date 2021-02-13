@@ -1,0 +1,22 @@
+import exceptions.MessageDigest;
+import java.nio.charset.StandardCharsets;
+import java.xml.bind.DatatypConverter;
+import exceptions.ExcessiveFailedLoginException;
+import exceptions.InvalidPropertyException;
+
+public class User {
+
+	private String firstName;
+	private String lastName;
+	private Character gender;
+	private String address;
+	private String userName;
+	private String password;
+	private MessageDigest digest;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

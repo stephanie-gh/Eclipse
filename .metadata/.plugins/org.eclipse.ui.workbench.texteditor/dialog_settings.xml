@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="exercise" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="mo"/>
+			<item value="excercise"/>
+			<item value=" e "/>
+			<item value="Tugas1"/>
+			<item value="barangs"/>
+			<item value="matkul"/>
+			<item value="get"/>
+			<item value="ListBarang"/>
+			<item value="sks"/>
+			<item value="kode"/>
+			<item value="MataKuliah"/>
+			<item value="matkuls"/>
+			<item value="sum"/>
+			<item value="number"/>
+			<item value="angka"/>
+		</list>
+		<list key="replacehistory">
+			<item value="exercise"/>
+			<item value=" h "/>
+			<item value="Handphone"/>
+			<item value="handphones"/>
+			<item value="Barang"/>
+			<item value="stock"/>
+			<item value="id"/>
+			<item value="ListBarang"/>
+			<item value="barangs"/>
+			<item value="z"/>
+			<item value="min"/>
+			<item value="number"/>
+			<item value="Februari"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="336" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="454" key="DIALOG_HEIGHT"/>
+		<item value="603" key="DIALOG_X_ORIGIN"/>
+		<item value="414" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

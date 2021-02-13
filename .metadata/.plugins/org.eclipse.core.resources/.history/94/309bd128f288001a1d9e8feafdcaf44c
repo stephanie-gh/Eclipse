@@ -1,0 +1,156 @@
+package akuharapkamusuka;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class MessageDialog extends JFrame {
+
+	private JButton tombol, btn2, btn3, btn4, btn5;
+
+	
+
+	public MessageDialog() {
+
+		super ("Event Handling");
+
+		
+
+		Container container = getContentPane();
+
+		container.setLayout(new FlowLayout());
+
+				
+
+		tombol = new JButton ("Message Dialog");
+
+		tombol.addActionListener(
+
+			new ActionListener() {
+
+				public void actionPerformed (ActionEvent e) {
+
+					JOptionPane.showMessageDialog (null,"Contoh Message Dialog");
+
+				}
+
+			}
+
+		);
+
+		container.add(tombol);
+
+		
+
+		btn2 = new JButton ("Warning Message");
+
+		btn2.addActionListener(
+
+			new ActionListener() {
+
+				public void actionPerformed (ActionEvent e) {
+
+					JOptionPane.showConfirmDialog(null, "Contoh Warning Message","Peringatan",
+
+						JOptionPane.CLOSED_OPTION, JOptionPane.WARNING_MESSAGE);
+
+				}
+
+			}
+
+		);
+
+		container.add(btn2);
+
+		
+
+		btn3 = new JButton ("Question Message");
+
+		btn3.addActionListener(
+
+			new ActionListener() {
+
+				public void actionPerformed (ActionEvent e) {
+
+					JOptionPane.showConfirmDialog(null, "Contoh Question Message","Pertanyaan",
+
+						JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+				}
+
+			}
+
+		);
+
+		container.add(btn3);
+
+		
+
+		btn4 = new JButton ("Information Message");
+
+		btn4.addActionListener(
+
+			new ActionListener() {
+
+				public void actionPerformed (ActionEvent e) {
+
+					JOptionPane.showConfirmDialog(null, "Contoh Information Message","Informasi",
+
+						JOptionPane.NO_OPTION, JOptionPane.INFORMATION_MESSAGE);
+
+				}
+
+			}
+
+		);
+
+		container.add(btn4);
+
+		
+
+		btn5 = new JButton ("Input Dialog");
+
+		btn5.addActionListener(
+
+			new ActionListener() {
+
+				public void actionPerformed (ActionEvent e) {
+
+					String a = JOptionPane.showInputDialog("Input Nama : ");
+
+					JOptionPane.showMessageDialog(null, a);
+
+				}
+
+			}
+
+		);
+
+		container.add(btn5);
+
+		
+
+		setSize (200,300);
+
+		setLocationRelativeTo(null);
+
+		setVisible (true);
+
+	}
+
+	
+
+	public static void main (String arg[]) {
+
+		MessageDialog test = new MessageDialog();
+
+		test.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+	
+

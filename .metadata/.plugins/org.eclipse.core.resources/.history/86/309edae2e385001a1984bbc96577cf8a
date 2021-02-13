@@ -1,0 +1,31 @@
+import java.security.MessageDigest;
+import java.nio.charset.StandardCharsets;
+import java.xml.bind.DatatypeConverter;
+import exceptions.ExcessiveFailedLoginException;
+import exceptions.InvalidPropertyException;
+
+public class User {
+
+	private String firstName;
+	private String lastName;
+	private Character gender;
+	private String address;
+	private String userName;
+	private String password;
+	private MessageDigest digest;
+	
+	private static final int maxLoginAttempts = 3;
+	private static int LoginAttempts;
+	
+	private String hash(String strToHash) {
+		try {
+			digest = MessageDigest.getInstance("SHA-256");
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

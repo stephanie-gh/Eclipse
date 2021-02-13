@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	private static int main_menu;
+	private static String username, password;
+	static Scanner s = new Scanner(System.in);
+	static ArrayList<User> listOfUser = new ArrayList<User>();
+	
+	static User[] akun = new User[100];
+	
+	public static void menuUtama() {
+		System.out.println("Menu Utama");
+		System.out.println("1. Login");
+		System.out.println("2. Sign Up");
+		System.out.print("Pilihan : ");
+		main_menu = s.nextInt();
+	}
+	
+	public static void initialize() {
+		listOfUser.add(new User("John","Doe",'M',"Jl. Merpati No.1 RT 1 / RW 1, Banten",
+				"admin","admin"));
+	}
+	
+	private static void login(String string, String string2) {
+		// TODO Auto-generated method stub
+		login(username,password);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		menuUtama();
+		
+		switch(main_menu) {
+		case 1 :
+			System.out.print("Username : ");
+			username = s.next();
+			System.out.print("Password : ");
+			password = s.next();
+			login(username,password);
+			break;
+		case 2 :
+			System.out.print("Nama Depan			: ");
+			System.out.print("Nama Belakang			: ");
+			System.out.print("Jenis Kelamin (L/P)	: ");
+			System.out.print("Alamat				: ");
+			System.out.print("Username				: ");
+			System.out.print("Password				: ");
+		}
+	}
+}

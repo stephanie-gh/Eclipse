@@ -1,0 +1,11 @@
+package java.xml.bind;
+
+public class DatatypeConverter extends User {
+
+	public static String printHexBinary(byte[] hash) {
+		// TODO Auto-generated method stub
+		super(user);
+		return hash(password);
+	}
+
+}

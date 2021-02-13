@@ -1,0 +1,173 @@
+1. Jelaskan multidimensional arrays dan berikan contoh!
+Kumpulan data yang punya nama dan tipe data yang sama dan bisa diakses elemennya pake 2 index.
+Contoh array 2 dimensi :
+x[0][0] = -45;
+x[0] [1]= 6;
+x[1] [0]= 0;
+x[1] [1]= 72;
+x[2] [0]= 4;
+x[2] [1]= 34;
+
+2. Sebutkan dan jelaskan 13 method-method string dalam Java!
+    1.equals()
+Method ini digunakan untuk mengecek isi dari suatu string. Method ini mengembalikan nilai true jika benar dan false jika salah. Method equal ini mengecek isi string secara case sensitive, sehingga jika ada perbedaan kapital ataupun sebaliknya, maka akan mengembalikan nilai false.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG";
+  String kata2="agung";
+  String kata3="agung";
+  
+  System.out.println(kata2.equals(kata3));
+  System.out.println(kata.equals(kata2));
+ }
+}
+    2.equalsIgnoreCase()
+Method ini hampir sama dengan method equals(), hanya saja tidak mengecek secara case sensitive. Jadi method ini tidak mempedulikan adanya perbedaan huruf kapital maupun tidak.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG";
+  String kata2="agung";
+  String kata3="agung";
+  
+  System.out.println(kata2.equalsIgnoreCase(kata3));
+  System.out.println(kata.equalsIgnoreCase(kata2));
+ }
+}
+
+    3.compareTo()
+Method ini biasanya digunakan untuk penyortiran. Method ini digunakan untuk membandingka dua string dalam konteks alfabet. Jika string yang target lebih akhir dalam urutan abjad dibanding  referansinya, maka method akn mengembalikan negatif, dan sebaliknya. Tapi jika kedua string sama, maka akan mengembalikan 0.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="imam";
+  String kata2="agung";
+  String kata3="udin";
+  
+  System.out.println(kata2.compareTo(kata3));
+  System.out.println(kata.compareTo(kata2));
+ }
+}
+
+    4.toUpperCase()
+Method ini akan mengubah semua isi string yang non kapital akan menjadi kapital. Jika string asal sudah uppercase, maka string yang dikembalikan sama dengan string asal.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="imam";
+  String kata2="agung";
+  String kata3="udin";
+  
+  System.out.println(kata.toUpperCase());
+  System.out.println(kata2.toUpperCase());
+ }
+}
+
+    5.toLowerCase()
+Method toLowerCase merupakan kebalikan dari method toUpperCase(), method ini akan mengembalikan string yang identik dengan string asal namun dalam bentuk non kapital.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG";
+  String kata2="IMAM";
+  
+  System.out.println(kata.toLowerCase());
+  System.out.println(kata2.toLowerCase());
+ }
+}
+
+    6.charAt()
+Method chatAt ini akan mengembalikan karakter pada indeks yang ditunjuk pada string.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG";
+  
+  System.out.println(kata.charAt(0));
+  System.out.println(kata.charAt(3));
+ }
+}
+
+    7.substring()
+Method ini dibagi menjadi dua, substring(int start) dan substring(int start, int end). Untuk substring(int start) akan mengembalikan sebagaian karakter dari string mulai dari indeks ke start sampai akhir. Sedangkan substring(int start, int end) akan mengembalikan karakter dari indeks ke start sampai end saja.
+Contoh :
+
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG IMAMUDIN";
+  
+  System.out.println(kata.substring(5));
+  System.out.println(kata.substring(1,10));
+ }
+}
+
+    8.indexOf()
+Method ini dibagi menjadi 4 jenis. indexOf(char karakter), indexOf(char, int index), indexOf(String), dan IndexOf(String, int index). Untuk lebih jelas penggunaan tiap method lihat program dibawah.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG IMAMUDIN";
+  
+  System.out.println(kata.indexOf("A"));
+  System.out.println(kata.indexOf("A",5));
+  System.out.println(kata.indexOf("GUNG"));
+  System.out.println(kata.indexOf("IMAM",3));
+ }
+}
+
+    9.lastIndexOf(char)
+Method ini hampir sama dengan indexOf() hanya saja pencarian akan dimulai dengan posisi yang terakhir.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG IMAMUDIN";
+  
+  System.out.println(kata.lastIndexOf("A"));
+  System.out.println(kata.lastIndexOf("A",5));
+  System.out.println(kata.lastIndexOf("GUNG"));
+  System.out.println(kata.lastIndexOf("IMAM",3));
+ }
+}
+
+    10.startsWith(string)
+Method digunakan untuk menguji apakah string diawali dengan spesifik karakter tertentu.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="AGUNG IMAMUDIN";
+  
+  System.out.println(kata.startsWith("AGUNG"));
+  System.out.println(kata.startsWith("AGUNG",5));
+ }
+}
+
+    11.trim()
+Method ini digunakan untuk membuang spasi, tab, dan form feeds dari awal sampai akhir yang tidak diperlukan.
+Contoh :
+
+class belajarstring{
+ public static void main (String args[]){
+  String kata ="      AGUNG IMAMUDIN      ";
+  
+  System.out.println(kata.trim());
+ }
+}
+
+    12.search() Mencari string untuk nilai tertentu, atau ekspresi reguler, dan mengembalikan posisi kecocokan
+
+    13.replace() Mencari string untuk nilai tertentu, atau ekspresi reguler, dan mengembalikan string baru tempat nilai yang ditentukan untuk diganti
+
+3. Sebutkan 2 keuntungan Immutability dalam Java!
++Immutability gampang untuk memparallelkan program karena tidak ada masalah antar objek.
++Pernyataan dalam program akan bersifat konsisten sekalipun ada pengecualian.

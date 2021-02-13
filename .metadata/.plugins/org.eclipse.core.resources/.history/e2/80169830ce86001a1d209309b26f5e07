@@ -1,0 +1,10 @@
+package java.xml.bind;
+
+public class DatatypeConverter {
+
+	public static String printHexBinary(byte[] hash) {
+		// TODO Auto-generated method stub
+		return hash(password);
+	}
+
+}
